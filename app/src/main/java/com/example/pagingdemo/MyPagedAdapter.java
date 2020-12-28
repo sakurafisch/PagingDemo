@@ -38,7 +38,7 @@ public class MyPagedAdapter extends PagedListAdapter<Student,  MyPagedAdapter.My
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         Student student = getItem(position);
         if (student == null) {
-            holder.textView.setText("loading");
+            holder.textView.setText(R.string.loading);
         } else {
             holder.textView.setText(String.valueOf(student.getStudentNumber()));
         }
